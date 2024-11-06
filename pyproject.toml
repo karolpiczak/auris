@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "auris"
 authors = [{ name = "Karol J. Piczak", email = "karol@piczak.com" }]
 description = "Audio Understanding for Resource-constrained Intelligent Systems"
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">= 3.13"
 keywords = [
     "audio",
