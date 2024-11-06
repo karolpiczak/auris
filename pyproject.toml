@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools >= 67.2", "setuptools-scm[toml] >= 7.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auris"
+authors = [{ name = "Karol J. Piczak", email = "karol@piczak.com" }]
+description = "Audio Understanding for Resource-constrained Intelligent Systems"
+readme = "README.rst"
+requires-python = ">= 3.13"
+keywords = [
+    "audio",
+    "embedded",
+    "neural networks",
+    "edge ai",
+    "microcontrollers",
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 2 - Pre-Alpha",
+    "Typing :: Typed",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Embedded Systems",
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = ["setuptools >= 67.2", "setuptools_scm[toml] >= 7.1", "wheel"]
+
+[project.urls]
+Homepage = "https://github.com/karolpiczak/auris"
+"Bug Tracker" = "https://github.com/karolpiczak/auris/issues"
+
+[tool.setuptools]
+platforms = ["any"]
+
+[tool.setuptools_scm]
+version_scheme = "calver-by-date"
+local_scheme = "no-local-version"
